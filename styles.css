@@ -1,3 +1,43 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* Apply the font family to the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+        /* Dark gray text color */
+}
+
+/* Set font size for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+/* Set font size for paragraphs */
+p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Set font size for buttons */
+.btn {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+}
+
+
 /* custom styles to the card body */
 .card-body {
     background-color: #f8f9fa;
@@ -22,4 +62,10 @@
 /* Responsive margin for cards */
 .card {
     margin-bottom: 20px;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
 }

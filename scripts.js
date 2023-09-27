@@ -1,6 +1,7 @@
 const apiKey = process.env.NEWS_API_KEY;
 const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`
 
+
 async function fetchNews() {
   try {
     const response = await fetch(url);
@@ -13,7 +14,9 @@ async function fetchNews() {
   }
 }
 
+
 fetchNews();
+
 
 function displayNews(articles) {
     const newsDiv = document.querySelector('#news');
@@ -28,6 +31,7 @@ function displayNews(articles) {
         //create and append a headline to the articleDiv card body
         const title = document.createElement('h4');
         title.className = 'card-title'; // Add Bootstrap card title class
+        title.style.fontWeight = 'bold';
         title.textContent = article.title;
         cardBody.appendChild(title);
     
@@ -36,12 +40,14 @@ function displayNews(articles) {
       // Create and append a description to the card body
         const description = document.createElement('p');
         description.className = 'card-text'; // Add Bootstrap card text class
+        description.style.fontSize = '1rem';
         description.textContent = article.description;
         cardBody.appendChild(description);
 
         // Create and append a link to the full article
         const link = document.createElement('a');
         link.className = 'btn btn-primary'; // Add Bootstrap button class
+        link.style.fontWeight = 'bold';
         link.href = article.url;
         link.textContent = 'Read More';
         cardBody.appendChild(link);
