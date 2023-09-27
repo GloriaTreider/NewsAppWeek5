@@ -1,7 +1,7 @@
 {
   "name": "news-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "This code is developed by Gloria Treider to handle APIs",
   "source": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
